@@ -37,8 +37,10 @@ node index.js
 When prompted, paste the full Google Maps URL of any business:
 
 ```
-Enter Google Maps URL: https://www.google.com/maps/place/Business+Name/...
+Enter Google Maps URL: https://maps.app.goo.gl/RvL7iSNSsNaVBRru8
 ```
+
+(Obtained by going to google maps > Share > Link to Share)
 
 The scraper will:
 1. Navigate to the business page
