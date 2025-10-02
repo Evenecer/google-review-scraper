@@ -41,7 +41,7 @@ Enter Google Maps URL: https://maps.app.goo.gl/RvL7iSNSsNaVBRru8
 ```
 
 (Obtained by going to google maps > Share > Link to Share)
-![alt text](https://i.imgur.com/QJ0tUkL.gif "Logo Title Text 1")
+![alt text](https://i.imgur.com/QJ0tUkL.gif "")
 
 The scraper will:
 1. Navigate to the business page
@@ -49,6 +49,7 @@ The scraper will:
 3. Automatically scroll to load all reviews
 4. Extract and display all review data
 5. Exit when complete
+![alt text](https://i.imgur.com/xVCKUNy.gif "")
 
 ## Output Format
 
