@@ -41,6 +41,7 @@ Enter Google Maps URL: https://maps.app.goo.gl/RvL7iSNSsNaVBRru8
 ```
 
 (Obtained by going to google maps > Share > Link to Share)
+![alt text](https://i.imgur.com/QJ0tUkL.gif "Logo Title Text 1")
 
 The scraper will:
 1. Navigate to the business page
