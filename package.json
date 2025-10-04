@@ -1,22 +1,39 @@
 {
-  "name": "google-maps-review-scraper",
+  "name": "google-review-scraper",
   "version": "1.0.0",
-  "description": "Scrape Google Maps reviews using Puppeteer with stealth mode",
-  "main": "index.js",
+  "description": "🔥 The most powerful Google review scraper with a gorgeous CLI interface",
+  "main": "scraper.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node scraper.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "puppeteer",
     "google-maps",
+    "reviews",
     "scraper",
-    "reviews"
+    "puppeteer",
+    "web-scraping",
+    "business-reviews",
+    "data-extraction"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
-    "puppeteer": "^24.15.1",
     "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "inquirer": "^8.2.5",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "ora": "^5.4.1",
+    "cli-table3": "^0.6.3",
+    "yargs": "^17.7.2",
+    "js-yaml": "^4.1.0",
+    "winston": "^3.11.0",
+    "axios": "^1.6.2",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2"
   }
 }
