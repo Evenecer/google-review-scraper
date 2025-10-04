@@ -1,0 +1,54 @@
+# ════════════════════════════════════════════════════════════
+# Google Review Scraper - Configuration File
+# ════════════════════════════════════════════════════════════
+#
+# This file contains default settings for the scraper.
+# You can edit these values or override them with CLI arguments.
+#
+
+# ──────────────────────────────────────────────────────────
+# Browser Settings
+# ──────────────────────────────────────────────────────────
+headless: true              # Run browser in headless mode (no GUI)
+timeout: 20000             # Page load timeout in milliseconds
+
+# ──────────────────────────────────────────────────────────
+# Scraping Settings
+# ──────────────────────────────────────────────────────────
+sortBy: "relevance"        # Sort order for reviews
+                          # Options: "newest", "highest", "lowest", "relevance"
+                          # - newest:    Most recent reviews first
+                          # - highest:   Highest rated reviews first (5 stars)
+                          # - lowest:    Lowest rated reviews first (1 star)
+                          # - relevance: Google's default sorting
+
+maxScrolls: 250            # Maximum scroll attempts (safety limit)
+scrollDelay: 800           # Delay between scrolls in milliseconds
+
+# ──────────────────────────────────────────────────────────
+# Output Settings
+# ──────────────────────────────────────────────────────────
+baseDir: "./data"          # Base directory for timestamped run folders
+                          # Each run creates: ./data/YYYY-MM-DD_HH-MM/
+
+exportCSV: false           # Also export to CSV format (in addition to JSON)
+
+# ──────────────────────────────────────────────────────────
+# Image Settings
+# ──────────────────────────────────────────────────────────
+downloadImages: false      # Download review and profile images
+imageConcurrency: 5        # Number of parallel image downloads
+
+# ──────────────────────────────────────────────────────────
+# Advanced Settings
+# ──────────────────────────────────────────────────────────
+blockResources: true       # Block images/fonts/media for faster scraping
+                          # (doesn't affect image downloading if enabled)
+
+userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+
+# ──────────────────────────────────────────────────────────
+# Logging
+# ──────────────────────────────────────────────────────────
+logLevel: "info"           # Logging level: error, warn, info, debug
+logDir: "./logs"           # Directory for log files
