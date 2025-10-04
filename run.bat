@@ -7,7 +7,7 @@ if not exist node_modules (
 )
 cls
 echo Starting app...
-node index.js
+node scraper.js
 
 echo.
 echo (App exited with code %errorlevel%)
@@ -18,3 +18,4 @@ exit /b
 echo Install failed.
 pause
 exit /b 1
+
